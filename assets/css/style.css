@@ -1,0 +1,111 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/background.jpg);
+    background-image: cover;
+}
+
+.logo{
+    width: 180px;
+}
+
+.navbar{
+    display: flex;
+    background-color: transparent;
+    justify-content: start;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;           
+}
+
+.form{
+    background-color: rgba(0, 0, 0, 0.75); 
+    height: 550px;
+    width: 440px;
+    padding: 60px 60px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    height: 40%;
+    margin-top: 40px;
+}
+.form-email{
+    background-color: rgba(128,128,128, 0.4);
+    border-radius: 4px;
+    height: 60px;
+    outline: none;
+    border: transparent;
+
+}
+
+.form-email::placeholder{
+    padding: 20px;
+    color: rgba(128,128,128, 0.8);
+}
+
+.bt{
+    background-color: red;
+    outline: none;
+    border: transparent;
+    border-radius: 4px;
+    height: 50px;
+    justify-content: center ;
+    align-items: center;
+}
+
+.entrar{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.checkbox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.help{
+    text-decoration: none;
+    color: rgba(128,128,128, 0.6);
+    font-size: 14px;
+}
+.remember{
+    font-size: 14px;
+}
+
+.facebook-logo{
+    width: 20px;
+}
+
+.facebook-smedia{
+    display: grid;
+    grid-template-columns: 20px 200px;
+    column-gap: 5px;
+    margin-top: 5px;
+}
+
+.connect{
+    display: grid;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+}
