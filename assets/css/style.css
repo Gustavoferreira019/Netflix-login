@@ -4,12 +4,14 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+    background-image: url(../img/background.jpg);
+    background-image: cover;
+}
 
 html,body{
     width: 100%;
     height: 100%;
-    background-image: url(../img/background.jpg);
-    background-image: cover;
 }
 
 .logo{
@@ -19,8 +21,10 @@ html,body{
 .navbar{
     display: flex;
     background-color: transparent;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
+    margin-left: 40px;
+    margin-top: 20px;
 }
 
 form{
@@ -70,6 +74,11 @@ form{
     align-items: center;
 }
 
+.bt:hover{
+    box-shadow: 1px 1px 10px 6px;
+    color: rgba(68, 23, 23, 0.9);
+}
+
 .entrar{
     color: white;
     font-weight: bold;
@@ -81,13 +90,19 @@ form{
 .checkbox{
     display: flex;
     justify-content: space-between;
+    margin-top: 13px;
 }
 
 .help{
     text-decoration: none;
-    color: rgba(128,128,128, 0.6);
+    color: #b3b3b3;
     font-size: 14px;
 }
+
+.help:hover{
+    text-decoration: underline;
+}
+
 .remember{
     font-size: 14px;
 }
@@ -100,12 +115,63 @@ form{
     display: grid;
     grid-template-columns: 20px 200px;
     column-gap: 5px;
-    margin-top: 5px;
+    margin-top: 20px;
 }
 
 .connect{
     display: grid;
     align-items: center;
-    color: white;
+}
+
+.help-me{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+    margin-right: 70px;
+}
+
+.help-me:hover{
+    color: black;
+}
+
+.navbar span:hover{
+    background-color: white;
+}
+
+.navbar span{
+    border: 2px solid red;
+    padding: 20px;
+    border-radius: 200px;
+    background-color: rgba(128,128,128, 0.3);
+    font-weight: 800;
+    
+}
+
+.link-face{
+    text-decoration: none;
+    color: #737373;
     font-weight: 500;
+}
+.link-new-account{
+    color: white;
+    text-decoration: none;
+}
+
+.new-account span{
+    font-weight: 600;
+}
+
+.new-account{
+    margin-top: 25px;
+}
+
+.protect{
+    margin-top: 25px;
+    color: #8c8c8c;
+    text-align: justify
+}
+
+.protect span{
+    color: blue;
 }
